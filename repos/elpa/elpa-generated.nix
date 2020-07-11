@@ -3117,21 +3117,7 @@
           license = lib.licenses.free;
         };
       }) {};
-    seq = callPackage ({ elpaBuild, fetchurl, lib }:
-      elpaBuild {
-        pname = "seq";
-        ename = "seq";
-        version = "2.22";
-        src = fetchurl {
-          url = "https://elpa.gnu.org/packages/seq-2.22.tar";
-          sha256 = "0zlqcbabzj8crg36ird2l74dbg5k7w1zf5iwva0h2dyvwyf9grma";
-        };
-        packageRequires = [];
-        meta = {
-          homepage = "https://elpa.gnu.org/packages/seq.html";
-          license = lib.licenses.free;
-        };
-      }) {};
+    seq = null;
     shelisp = callPackage ({ elpaBuild, fetchurl, lib }:
       elpaBuild {
         pname = "shelisp";
